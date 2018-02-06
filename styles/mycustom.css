@@ -1,0 +1,333 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: url(../images/mainwall.jpeg) center center no-repeat;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+main {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.site-wrapper {
+	height: 100%;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+  
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 2rem;
+}
+
+
+/*
+ * Header
+ */
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+  
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255,255,255,1);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255,255,255,.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+h1 {
+  
+	font-size: 1rem;
+}
+
+.cover p {
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+}
+
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+.cover-heading {
+	font-family: 'Amatic SC', cursive;
+    font-size: 6rem;
+	padding-bottom: 50px;
+}
+
+.btn-lg {
+	font-size: 2rem;
+}
+
+/*
+ * Menu
+ */
+
+#menus {
+	background: url(../images/chalkboard.jpg) center center;
+	height: auto;
+	
+}
+
+.menu h1 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 100px;
+	padding: 15px;
+}
+
+.menuPizzas {
+	float: left;
+	height: 500px;
+	width: 500px;
+}
+
+.menuPizzas img {
+	float: left;
+	margin-right: 40px;
+}
+
+.menuPizzas h2 {
+	font-size: 70px;
+	padding-top: 10px;
+	text-align: left;
+	font-family: 'Amatic SC', cursive;
+	
+}
+
+.menuPizzas li {
+	text-align: left;
+}
+
+#menus h3 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 60px;
+}
+
+#menus p, #menus ol, #menus ul {
+	text-align: left;
+	padding: 30px;
+}
+
+.col-md {
+	min-width: 320px;
+}
+
+.container-fluid {
+	
+}
+
+/*
+ * Video
+ */
+
+
+#videoSpecial {
+	display: block;
+	max-width: 90%;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+#video p {
+	padding: 20px;
+	color: black;
+	font-style: normal;
+	text-decoration: none;
+	text-shadow: none;
+	text-align: left;
+}
+
+#video h1 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 70px;
+	padding: 15px;
+	color: black;
+	text-decoration: none;
+	text-shadow: none;
+}
+
+/*
+* Parallax
+*/
+
+.blacky {
+	height: 30px;
+	width: 100%;
+/*	background-color: #292c2f;*/
+}
+
+.parallax-window {
+	height: 500px;
+	background: transparent;
+	width: 100%;
+}
+
+/*
+ * Maps
+ */
+
+#maps h1 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 70px;
+	padding: 15px;
+	color: black;
+	text-decoration: none;
+	text-shadow: none;
+}
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: rgba(255,255,255,0.5);
+}
+
+/*
+* Contact form
+*/
+
+#kontaktMail {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 800px) {
+  /* Pull out the header and footer */
+    
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+
+  .cover-heading {
+    font-size: 10rem;
+	padding-bottom: 1px;
+  }
+    
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (max-width: 799px) {
+    .site-wrapper {
+        background-color: rgba(0,0,0,0.7);
+    }
+    main {
+        background-color: unset;
+    }
+    
+    main {
+    display: block;
+    vertical-align: middle;
+  }
+}
+
+

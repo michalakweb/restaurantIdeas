@@ -1,0 +1,1 @@
+C:\Users\Mateusz\Desktop\WEBDeveloper\Macierzanka\wersja2\styles    sass --watch mycustom.scss:mycustom.css --style compressed
